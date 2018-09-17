@@ -66,7 +66,7 @@ class Connected2DLine extends Component {
                 }
             } else if(h === 0){
                 h = 12-h;
-                meridiem = meridiem=='am'?'pm':'am';
+                meridiem = meridiem==='am'?'pm':'am';
             } else {
                 if(h ===1 ) {
                     h = 12;
@@ -91,7 +91,7 @@ class Connected2DLine extends Component {
                 "jsonrpc": "2.0",
                 "method": "generateIntegers",
                 "params": {
-                    "apiKey": "f17bd7ab-2a7a-4275-8a5e-d85f815db3f8",
+                    "apiKey": "5bb9566b-5647-4704-9fbe-c2aafb79dd47",
                     "n": count,
                     "min": -100,
                     "max": 1000,
@@ -134,7 +134,7 @@ class Connected2DLine extends Component {
             }
         };
         
-        if(this.state.input == ''){
+        if(this.state.input === ''){
             return  (
                 <div className="center">
                     <input type="text" onChange={ this.handleChange }></input>
